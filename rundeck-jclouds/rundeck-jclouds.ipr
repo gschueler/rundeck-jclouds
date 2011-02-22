@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project relativePaths="false" version="4">
+  <component name="AntConfiguration">
+    <defaultAnt bundledAnt="true" />
+  </component>
+  <component name="BuildJarProjectSettings">
+    <option name="BUILD_JARS_ON_MAKE" value="false" />
+  </component>
+  <component name="CodeStyleSettingsManager">
+    <option name="PER_PROJECT_SETTINGS" />
+    <option name="USE_PER_PROJECT_SETTINGS" value="false" />
+  </component>
+  <component name="CompilerConfiguration">
+    <option name="DEFAULT_COMPILER" value="Javac" />
+    <option name="DEPLOY_AFTER_MAKE" value="0" />
+    <resourceExtensions>
+      <entry name=".+\.(properties|xml|html|dtd|tld)" />
+      <entry name=".+\.(gif|png|jpeg|jpg)" />
+    </resourceExtensions>
+    <wildcardResourcePatterns>
+      <entry name="?*.properties" />
+      <entry name="?*.xml" />
+      <entry name="?*.gif" />
+      <entry name="?*.png" />
+      <entry name="?*.jpeg" />
+      <entry name="?*.jpg" />
+      <entry name="?*.html" />
+      <entry name="?*.dtd" />
+      <entry name="?*.tld" />
+      <entry name="?*.ftl" />
+    </wildcardResourcePatterns>
+  </component>
+  <component name="CopyrightManager" default="dtolabs">
+    <copyright>
+      <option name="notice" value="Copyright &amp;#36;today.year DTO Labs, Inc. (http://dtolabs.com)&#10; &#10;Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);&#10;you may not use this file except in compliance with the License.&#10;You may obtain a copy of the License at&#10;&#10;    http://www.apache.org/licenses/LICENSE-2.0&#10;&#10;Unless required by applicable law or agreed to in writing, software&#10;distributed under the License is distributed on an &quot;AS IS&quot; BASIS,&#10;WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.&#10;See the License for the specific language governing permissions and&#10;limitations under the License." />
+      <option name="keyword" value="Copyright" />
+      <option name="myName" value="dtolabs" />
+      <option name="myLocal" value="true" />
+    </copyright>
+    <module2copyright>
+      <element module="All" copyright="dtolabs" />
+    </module2copyright>
+  </component>
+  <component name="DependencyValidationManager">
+    <option name="SKIP_IMPORT_STATEMENTS" value="false" />
+  </component>
+  <component name="EclipseCompilerSettings">
+    <option name="DEBUGGING_INFO" value="true" />
+    <option name="GENERATE_NO_WARNINGS" value="true" />
+    <option name="DEPRECATION" value="false" />
+    <option name="ADDITIONAL_OPTIONS_STRING" value="" />
+    <option name="MAXIMUM_HEAP_SIZE" value="128" />
+  </component>
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
+  <component name="IdProvider" IDEtalkID="69F341B0BBB1BB57277EB8EBCDD4E849" />
+  <component name="InspectionProjectProfileManager">
+    <option name="PROJECT_PROFILE" value="Project Default" />
+    <option name="USE_PROJECT_LEVEL_SETTINGS" value="false" />
+    <scopes />
+    <profiles>
+      <profile version="1.0" is_locked="false">
+        <option name="myName" value="Project Default" />
+        <option name="myLocal" value="false" />
+        <inspection_tool class="CanBeFinal" level="WARNING" enabled="true">
+          <option name="REPORT_CLASSES" value="true" />
+          <option name="REPORT_METHODS" value="true" />
+          <option name="REPORT_FIELDS" value="true" />
+        </inspection_tool>
+        <inspection_tool class="JavaDoc" level="WARNING" enabled="false">
+          <option name="TOP_LEVEL_CLASS_OPTIONS">
+            <value>
+              <option name="ACCESS_JAVADOC_REQUIRED_FOR" value="public" />
+              <option name="REQUIRED_TAGS" value="" />
+            </value>
+          </option>
+          <option name="INNER_CLASS_OPTIONS">
+            <value>
+              <option name="ACCESS_JAVADOC_REQUIRED_FOR" value="protected" />
+              <option name="REQUIRED_TAGS" value="" />
+            </value>
+          </option>
+          <option name="METHOD_OPTIONS">
+            <value>
+              <option name="ACCESS_JAVADOC_REQUIRED_FOR" value="protected" />
+              <option name="REQUIRED_TAGS" value="@return@param@throws or @exception" />
+            </value>
+          </option>
+          <option name="FIELD_OPTIONS">
+            <value>
+              <option name="ACCESS_JAVADOC_REQUIRED_FOR" value="protected" />
+              <option name="REQUIRED_TAGS" value="" />
+            </value>
+          </option>
+          <option name="IGNORE_DEPRECATED" value="false" />
+          <option name="IGNORE_JAVADOC_PERIOD" value="true" />
+          <option name="myAdditionalJavadocTags" value="" />
+        </inspection_tool>
+        <inspection_tool class="EqualsAndHashcode" level="WARNING" enabled="true" />
+        <inspection_tool class="LocalCanBeFinal" level="WARNING" enabled="true">
+          <option name="REPORT_VARIABLES" value="true" />
+          <option name="REPORT_PARAMETERS" value="true" />
+        </inspection_tool>
+        <inspection_tool class="JavadocReference" level="WARNING" enabled="true" />
+        <inspection_tool class="ConstantConditions" level="WARNING" enabled="false">
+          <option name="SUGGEST_NULLABLE_ANNOTATIONS" value="false" />
+          <option name="DONT_REPORT_TRUE_ASSERT_STATEMENTS" value="false" />
+        </inspection_tool>
+        <inspection_tool class="RequiredAttributes" level="WARNING" enabled="true">
+          <option name="myAdditionalRequiredHtmlAttributes" value="type" />
+        </inspection_tool>
+      </profile>
+    </profiles>
+    <list size="0" />
+  </component>
+  <component name="JavacSettings">
+    <option name="DEBUGGING_INFO" value="true" />
+    <option name="GENERATE_NO_WARNINGS" value="false" />
+    <option name="DEPRECATION" value="true" />
+    <option name="ADDITIONAL_OPTIONS_STRING" value="" />
+    <option name="MAXIMUM_HEAP_SIZE" value="128" />
+  </component>
+  <component name="JavadocGenerationManager">
+    <option name="OUTPUT_DIRECTORY" />
+    <option name="OPTION_SCOPE" value="protected" />
+    <option name="OPTION_HIERARCHY" value="true" />
+    <option name="OPTION_NAVIGATOR" value="true" />
+    <option name="OPTION_INDEX" value="true" />
+    <option name="OPTION_SEPARATE_INDEX" value="true" />
+    <option name="OPTION_DOCUMENT_TAG_USE" value="false" />
+    <option name="OPTION_DOCUMENT_TAG_AUTHOR" value="false" />
+    <option name="OPTION_DOCUMENT_TAG_VERSION" value="false" />
+    <option name="OPTION_DOCUMENT_TAG_DEPRECATED" value="true" />
+    <option name="OPTION_DEPRECATED_LIST" value="true" />
+    <option name="OTHER_OPTIONS" value="" />
+    <option name="HEAP_SIZE" />
+    <option name="LOCALE" />
+    <option name="OPEN_IN_BROWSER" value="true" />
+  </component>
+  <component name="JikesSettings">
+    <option name="JIKES_PATH" value="" />
+    <option name="DEBUGGING_INFO" value="true" />
+    <option name="DEPRECATION" value="true" />
+    <option name="GENERATE_NO_WARNINGS" value="false" />
+    <option name="IS_EMACS_ERRORS_MODE" value="true" />
+    <option name="ADDITIONAL_OPTIONS_STRING" value="" />
+  </component>
+  <component name="Maven Reloaded">
+    <option name="config">
+      <value>
+        <option name="pluginEnabled" value="true" />
+        <option name="updateClasspathsEnabled" value="true" />
+        <option name="sortDependenciesEnabled" value="true" />
+        <option name="removeDuplicateDependenciesEnabled" value="true" />
+        <option name="respondToPomChangesEnabled" value="true" />
+        <option name="manageSourceRootsEnabled" value="true" />
+        <option name="manageModuleInterdependenciesEnabled" value="true" />
+        <option name="downloadSourcesEnabled" value="false" />
+        <option name="downloadJavadocEnabled" value="false" />
+        <option name="generateSourcesEnabled" value="false" />
+        <option name="settingsPath" value="/Users/greg/.m2/settings.xml" />
+        <option name="searchFilter" value="" />
+        <option name="disabledPoms">
+          <value>
+            <collection type="java.util.TreeSet" />
+          </value>
+        </option>
+        <option name="moduleInterDependencies">
+          <value>
+            <map type="java.util.TreeMap" />
+          </value>
+        </option>
+        <option name="logLevel" value="1" />
+      </value>
+    </option>
+  </component>
+  <component name="MavenBuildProjectComponent">
+    <option name="mavenExecutable" value="/Users/greg/devel/apache-maven-2.2.1" />
+    <option name="Settings File" value="/Users/greg/.m2/settings.xml" />
+    <option name="mavenCommandLineParams" value="" />
+    <option name="vmOptions" value="" />
+    <option name="useMavenEmbedder" value="false" />
+    <option name="useFilter" value="false" />
+    <option name="Batch Mode" value="false" />
+    <option name="Check Plugin Updates" value="false" />
+    <option name="Debug" value="false" />
+    <option name="Errors" value="false" />
+    <option name="Fail At End" value="false" />
+    <option name="Fail Fast" value="false" />
+    <option name="Fail Never" value="false" />
+    <option name="Lax Checksums" value="false" />
+    <option name="No Plugin Registry" value="false" />
+    <option name="No Plugin Updates" value="false" />
+    <option name="Non Recursive" value="false" />
+    <option name="Offline" value="false" />
+    <option name="Reactor" value="false" />
+    <option name="Strict Checksums" value="false" />
+    <option name="Update Plugins" value="false" />
+    <option name="Update Snapshots" value="false" />
+    <option name="Skip Tests" value="false" />
+    <pom-list>
+      <pom>
+        <option name="path" value="$PROJECT_DIR$/pom.xml" />
+        <plugin-list />
+      </pom>
+    </pom-list>
+  </component>
+  <component name="ProjectDetails">
+    <option name="projectName" value="rundeck-jclouds" />
+  </component>
+  <component name="ProjectFileVersion" converted="true" />
+  <component name="ProjectKey">
+    <option name="state" value="project://default" />
+  </component>
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/src/main/Main.iml" filepath="$PROJECT_DIR$/src/main/Main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/test/Test.iml" filepath="$PROJECT_DIR$/src/test/Test.iml" />
+    </modules>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_5" assert-keyword="true" jdk-15="true" project-jdk-name="1.6" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="RmicSettings">
+    <option name="IS_EANABLED" value="false" />
+    <option name="DEBUGGING_INFO" value="true" />
+    <option name="GENERATE_NO_WARNINGS" value="false" />
+    <option name="GENERATE_IIOP_STUBS" value="false" />
+    <option name="ADDITIONAL_OPTIONS_STRING" value="" />
+  </component>
+  <component name="SvnBranchConfigurationManager">
+    <option name="mySupportsUserInfoFilter" value="true" />
+  </component>
+  <component name="ToggleTest">
+    <toggle from="*" to="*UnitTest" />
+    <toggle from="*" to="*AtomicTest" />
+  </component>
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+  </component>
+  <component name="WebServicesPlugin" addRequiredLibraries="true" />
+  <component name="libraryTable">
+    <library name="jclouds">
+      <CLASSES>
+        <root url="file://$MAVEN_REPOSITORY$/org/jclouds" />
+        <root url="file://$MAVEN_REPOSITORY$/org/jclouds/jclouds-project/1.0-beta-9b" />
+        <root url="file://$MAVEN_REPOSITORY$/org/jclouds/jclouds-core/1.0-beta-9b" />
+        <root url="file://$MAVEN_REPOSITORY$/org/jclouds/jclouds-compute/1.0-beta-9b" />
+        <root url="file://$MAVEN_REPOSITORY$/org/jclouds/jclouds-allcompute/1.0-beta-9b" />
+        <root url="file://$MAVEN_REPOSITORY$/org/jclouds/jclouds-scriptbuilder/1.0-beta-9b" />
+        <root url="file://$MAVEN_REPOSITORY$/org/jclouds/driver/jclouds-jsch/1.0-beta-9b" />
+        <root url="file://$MAVEN_REPOSITORY$/org/jclouds/common/aws-common/1.0-beta-9b" />
+        <root url="file://$MAVEN_REPOSITORY$/org/jclouds/api/cloudservers/1.0-beta-9b" />
+        <root url="file://$MAVEN_REPOSITORY$/org/jclouds/api/byon/1.0-beta-9b" />
+        <root url="file://$MAVEN_REPOSITORY$/org/jclouds/api/vcloud/1.0-beta-9b" />
+        <root url="file://$MAVEN_REPOSITORY$/org/jclouds/api/ec2/1.0-beta-9b" />
+        <root url="file://$MAVEN_REPOSITORY$/org/jclouds/common/trmk-common/1.0-beta-9b" />
+        <root url="file://$MAVEN_REPOSITORY$/org/jclouds/common/vcloud-common/1.0-beta-9b" />
+        <root url="file://$MAVEN_REPOSITORY$/org/jclouds/api/vcloudexpress/1.0-beta-9b" />
+        <root url="file://$MAVEN_REPOSITORY$/org/jclouds/api/elasticstack/1.0-beta-9b" />
+        <root url="file://$MAVEN_REPOSITORY$/org/jclouds/api/eucalyptus/1.0-beta-9b" />
+        <root url="file://$MAVEN_REPOSITORY$/org/jclouds/common/openstack-common/1.0-beta-9b" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+      <jarDirectory url="file://$MAVEN_REPOSITORY$/org/jclouds" recursive="false" />
+      <jarDirectory url="file://$MAVEN_REPOSITORY$/org/jclouds/api/byon/1.0-beta-9b" recursive="false" />
+      <jarDirectory url="file://$MAVEN_REPOSITORY$/org/jclouds/api/cloudservers/1.0-beta-9b" recursive="false" />
+      <jarDirectory url="file://$MAVEN_REPOSITORY$/org/jclouds/api/ec2/1.0-beta-9b" recursive="false" />
+      <jarDirectory url="file://$MAVEN_REPOSITORY$/org/jclouds/api/elasticstack/1.0-beta-9b" recursive="false" />
+      <jarDirectory url="file://$MAVEN_REPOSITORY$/org/jclouds/api/eucalyptus/1.0-beta-9b" recursive="false" />
+      <jarDirectory url="file://$MAVEN_REPOSITORY$/org/jclouds/api/vcloud/1.0-beta-9b" recursive="false" />
+      <jarDirectory url="file://$MAVEN_REPOSITORY$/org/jclouds/api/vcloudexpress/1.0-beta-9b" recursive="false" />
+      <jarDirectory url="file://$MAVEN_REPOSITORY$/org/jclouds/common/aws-common/1.0-beta-9b" recursive="false" />
+      <jarDirectory url="file://$MAVEN_REPOSITORY$/org/jclouds/common/openstack-common/1.0-beta-9b" recursive="false" />
+      <jarDirectory url="file://$MAVEN_REPOSITORY$/org/jclouds/common/trmk-common/1.0-beta-9b" recursive="false" />
+      <jarDirectory url="file://$MAVEN_REPOSITORY$/org/jclouds/common/vcloud-common/1.0-beta-9b" recursive="false" />
+      <jarDirectory url="file://$MAVEN_REPOSITORY$/org/jclouds/driver/jclouds-jsch/1.0-beta-9b" recursive="false" />
+      <jarDirectory url="file://$MAVEN_REPOSITORY$/org/jclouds/jclouds-allcompute/1.0-beta-9b" recursive="false" />
+      <jarDirectory url="file://$MAVEN_REPOSITORY$/org/jclouds/jclouds-compute/1.0-beta-9b" recursive="false" />
+      <jarDirectory url="file://$MAVEN_REPOSITORY$/org/jclouds/jclouds-core/1.0-beta-9b" recursive="false" />
+      <jarDirectory url="file://$MAVEN_REPOSITORY$/org/jclouds/jclouds-project/1.0-beta-9b" recursive="false" />
+      <jarDirectory url="file://$MAVEN_REPOSITORY$/org/jclouds/jclouds-scriptbuilder/1.0-beta-9b" recursive="false" />
+    </library>
+    <library name="Google">
+      <CLASSES>
+        <root url="file://$MAVEN_REPOSITORY$/com/google/code/gson/gson/1.6" />
+        <root url="file://$MAVEN_REPOSITORY$/com/google/inject/extensions/guice-assistedinject/3.0-rc2" />
+        <root url="file://$MAVEN_REPOSITORY$/com/google/inject/extensions/extensions-parent/3.0-rc2" />
+        <root url="file://$MAVEN_REPOSITORY$/com/google/inject/guice/3.0-rc2" />
+        <root url="file://$MAVEN_REPOSITORY$/com/google/google/5" />
+        <root url="file://$MAVEN_REPOSITORY$/com/google/guava/guava/r08" />
+        <root url="file://$MAVEN_REPOSITORY$/com/google/inject/guice-parent/3.0-rc2" />
+        <root url="file://$MAVEN_REPOSITORY$/com/google/code/findbugs/jsr305/1.3.9" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+      <jarDirectory url="file://$MAVEN_REPOSITORY$/com/google/code/findbugs/jsr305/1.3.9" recursive="false" />
+      <jarDirectory url="file://$MAVEN_REPOSITORY$/com/google/code/gson/gson/1.6" recursive="false" />
+      <jarDirectory url="file://$MAVEN_REPOSITORY$/com/google/google/5" recursive="false" />
+      <jarDirectory url="file://$MAVEN_REPOSITORY$/com/google/guava/guava/r08" recursive="false" />
+      <jarDirectory url="file://$MAVEN_REPOSITORY$/com/google/inject/extensions/extensions-parent/3.0-rc2" recursive="false" />
+      <jarDirectory url="file://$MAVEN_REPOSITORY$/com/google/inject/extensions/guice-assistedinject/3.0-rc2" recursive="false" />
+      <jarDirectory url="file://$MAVEN_REPOSITORY$/com/google/inject/guice-parent/3.0-rc2" recursive="false" />
+      <jarDirectory url="file://$MAVEN_REPOSITORY$/com/google/inject/guice/3.0-rc2" recursive="false" />
+    </library>
+    <library name="Snakeyaml">
+      <CLASSES>
+        <root url="file://$MAVEN_REPOSITORY$/org/yaml/snakeyaml/1.7" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+      <jarDirectory url="file://$MAVEN_REPOSITORY$/org/yaml/snakeyaml/1.7" recursive="false" />
+    </library>
+  </component>
+  <UsedPathMacros>
+    <macro name="MAVEN_REPOSITORY" description="Maven Local Repostiry" />
+  </UsedPathMacros>
+</project>
+
