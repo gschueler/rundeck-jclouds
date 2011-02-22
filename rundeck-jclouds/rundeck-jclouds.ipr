@@ -311,6 +311,14 @@
       <SOURCES />
       <jarDirectory url="file://$MAVEN_REPOSITORY$/org/yaml/snakeyaml/1.7" recursive="false" />
     </library>
+    <library name="Dom4j">
+      <CLASSES>
+        <root url="file://$MAVEN_REPOSITORY$/dom4j/dom4j/1.6.1" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+      <jarDirectory url="file://$MAVEN_REPOSITORY$/dom4j/dom4j/1.6.1" recursive="false" />
+    </library>
   </component>
   <UsedPathMacros>
     <macro name="MAVEN_REPOSITORY" description="Maven Local Repostiry" />

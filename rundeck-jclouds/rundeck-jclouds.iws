@@ -2,11 +2,23 @@
 <project relativePaths="false" version="4">
   <component name="ChangeListManager">
     <list default="true" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/Test.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rundeck-jclouds.iws" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/org/dtolabs/rundeck/jclouds/AppTest.java" afterPath="$PROJECT_DIR$/src/main/java/org/dtolabs/rundeck/jclouds/NodeMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/dtolabs/rundeck/resources/RundeckNodesRepBuilder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rundeck-jclouds.ipr" afterPath="$PROJECT_DIR$/rundeck-jclouds.ipr" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Main.iml" afterPath="$PROJECT_DIR$/src/main/Main.iml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/run.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/Main.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rundeck-jclouds.ipr" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/dtolabs/rundeck/jclouds/RundeckJcloudsResourcesGenerator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rundeck-jclouds.iws" afterPath="$PROJECT_DIR$/rundeck-jclouds.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/dtolabs/rundeck/jclouds/Test.java" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/dtolabs/rundeck/resources/ResourcesGenerator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/dtolabs/rundeck/jclouds/impl/BaseRundeckMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/dtolabs/rundeck/resources/format/XmlGenerator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/dtolabs/rundeck/resources/format/YamlGenerator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/dtolabs/rundeck/resources/ResourcesGeneratorFactory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/dtolabs/rundeck/resources/RundeckNodeMeta.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/Test.iml" afterPath="$PROJECT_DIR$/src/test/Test.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/dtolabs/rundeck/resources/RundeckNodesRep.java" />
     </list>
     <ignored path=".idea/workspace.xml" />
     <ignored path="rundeck-jclouds.iws" />
@@ -70,28 +82,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="RundeckJcloudsResourcesGenerator.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/dtolabs/rundeck/jclouds/RundeckJcloudsResourcesGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="25" selection-start="971" selection-end="971" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JschSshClientModule.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/jclouds/driver/jclouds-jsch/1.0-beta-9b/jclouds-jsch-1.0-beta-9b.jar!/org/jclouds/ssh/jsch/config/JschSshClientModule.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="105" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Test.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/dtolabs/rundeck/jclouds/Test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="22" selection-start="2861" selection-end="2861" vertical-scroll-proportion="0.0">
+            <state line="132" column="26" selection-start="5208" selection-end="5208" vertical-scroll-proportion="-30.538462">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -99,20 +93,100 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AppTest.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/org/dtolabs/rundeck/jclouds/AppTest.java">
+      <file leaf-file-name="BaseRundeckMapper.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/dtolabs/rundeck/jclouds/impl/BaseRundeckMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="0" selection-start="1254" selection-end="1254" vertical-scroll-proportion="0.6281352">
+            <state line="135" column="81" selection-start="5275" selection-end="5275" vertical-scroll-proportion="0.8262806">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="22" selection-start="1113" selection-end="1113" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RunNodesException.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/jclouds/jclouds-compute/1.0-beta-9b/jclouds-compute-1.0-beta-9b.jar!/org/jclouds/compute/RunNodesException.class">
+      <file leaf-file-name="NodeMapper.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/dtolabs/rundeck/jclouds/NodeMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="13" selection-start="157" selection-end="157" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="29" column="61" selection-start="996" selection-end="996" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="YamlGenerator.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/dtolabs/rundeck/resources/format/YamlGenerator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="38" column="78" selection-start="1306" selection-end="1306" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="XmlGenerator.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/dtolabs/rundeck/resources/format/XmlGenerator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="45" column="13" selection-start="1473" selection-end="1473" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RundeckNodesRep.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/dtolabs/rundeck/resources/RundeckNodesRep.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="62" selection-start="955" selection-end="959" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#getContent#0;class#RundeckNodesRep#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RundeckNodeMeta.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/dtolabs/rundeck/resources/RundeckNodeMeta.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="12" selection-start="984" selection-end="984" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="method#getName#0;class#RundeckNodeMeta#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ResourcesGeneratorFactory.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/dtolabs/rundeck/resources/ResourcesGeneratorFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="45" column="76" selection-start="1496" selection-end="1496" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RundeckNodesRepBuilder.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/dtolabs/rundeck/resources/RundeckNodesRepBuilder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="117" column="71" selection-start="3498" selection-end="3498" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -211,76 +285,6 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="Test" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="test" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="java" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="org.dtolabs.rundeck" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="rundeck-jclouds" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Test" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="test" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="java" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="org.dtolabs.rundeck" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="jclouds" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="rundeck-jclouds" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Test" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="test" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="java" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="jclouds" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="rundeck-jclouds" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
           <option name="myItemId" value="Main" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
         </PATH_ELEMENT>
@@ -317,7 +321,97 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
+          <option name="myItemId" value="rundeck" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="resources" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="rundeck-jclouds" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Main" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="main" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="java" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="rundeck" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="resources" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="format" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="rundeck-jclouds" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Main" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="main" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="java" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="rundeck" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
           <option name="myItemId" value="jclouds" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="rundeck-jclouds" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Main" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="main" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="java" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="rundeck" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="jclouds" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="impl" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -354,6 +448,14 @@
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="IntroduceConstantDialog.RECENTS_KEY">
+      <recent name="org.dtolabs.rundeck.jclouds.RundeckJcloudsResourcesGenerator" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.dtolabs.rundeck.resources" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="Remote" factoryName="Remote">
@@ -544,26 +646,101 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/dtolabs/rundeck/resources/ResourcesGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="25" selection-start="971" selection-end="971" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/dtolabs/rundeck/jclouds/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="22" selection-start="2861" selection-end="2861" vertical-scroll-proportion="0.0">
+        <state line="35" column="17" selection-start="1144" selection-end="1144" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/dtolabs/rundeck/jclouds/AppTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/dtolabs/rundeck/resources/ResourcesGeneratorFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="0" selection-start="1254" selection-end="1254" vertical-scroll-proportion="0.6281352">
+        <state line="45" column="76" selection-start="1496" selection-end="1496" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/dtolabs/rundeck/jclouds/RundeckJcloudsResourcesGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="132" column="26" selection-start="5208" selection-end="5208" vertical-scroll-proportion="-30.538462">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/dtolabs/rundeck/jclouds/NodeMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="61" selection-start="996" selection-end="996" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/dtolabs/rundeck/resources/format/YamlGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="78" selection-start="1306" selection-end="1306" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/dtolabs/rundeck/resources/RundeckNodesRep.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="62" selection-start="955" selection-end="959" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getContent#0;class#RundeckNodesRep#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/dtolabs/rundeck/resources/format/XmlGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="13" selection-start="1473" selection-end="1473" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/dtolabs/rundeck/resources/RundeckNodeMeta.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="12" selection-start="984" selection-end="984" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="method#getName#0;class#RundeckNodeMeta#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/dtolabs/rundeck/resources/RundeckNodesRepBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="117" column="71" selection-start="3498" selection-end="3498" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="22" selection-start="1113" selection-end="1113" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/dtolabs/rundeck/jclouds/impl/BaseRundeckMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="135" column="81" selection-start="5275" selection-end="5275" vertical-scroll-proportion="0.8262806">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
