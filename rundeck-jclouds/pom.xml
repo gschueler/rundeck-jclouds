@@ -41,18 +41,18 @@
   
   <build>
     <plugins>
-        <plugin>
+        <!--<plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-jar-plugin</artifactId>
           <configuration>
             <archive>
               <manifest>
-                <mainClass>org.dtolabs.rundeck.jclouds.Test</mainClass>
+                <mainClass>org.dtolabs.rundeck.jclouds.RundeckJcloudsResourcesGenerator</mainClass>
                 <packageName>org.dtolabs.rundeck.jclouds</packageName>
               </manifest>
             </archive>
           </configuration>
-      </plugin>
+      </plugin>-->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
