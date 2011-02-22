@@ -1,7 +1,7 @@
 rundeck-jclouds: jclouds resource model provider for RunDeck.
 
-Jclouds: http://jclouds.org
-RunDeck: http://rundeck.org
+* Jclouds: <http://jclouds.org>
+* RunDeck: <http://rundeck.org>
 
 Work in progress..
 
@@ -9,7 +9,7 @@ Build
 ---
 
     cd rundeck-jclouds
-    mv package
+    mvn package
 
 Execute
 ---
@@ -24,8 +24,7 @@ Create "provider.properties" file to specify Jclouds provider name and access cr
 
 1. configure classpath to contain necessary jars. (jclouds, google guice, etc. see below)
 2. run java:
-
-    java -classpath "$CLASSPATH:target/rundeck-jclouds-1.0-SNAPSHOT.jar" org.dtolabs.rundeck.jclouds.RundeckJcloudsResourcesGenerator rundeck-jclouds/src/test/resources/stubprovider.properties rundeck-jclouds/src/test/resources/test-mapping.properties xml
+        java -classpath "$CLASSPATH:target/rundeck-jclouds-1.0-SNAPSHOT.jar" org.dtolabs.rundeck.jclouds.RundeckJcloudsResourcesGenerator rundeck-jclouds/src/test/resources/stubprovider.properties rundeck-jclouds/src/test/resources/test-mapping.properties xml
 
 This will generate XML formatted RunDeck resources from 10 jclouds stub instances:
 
