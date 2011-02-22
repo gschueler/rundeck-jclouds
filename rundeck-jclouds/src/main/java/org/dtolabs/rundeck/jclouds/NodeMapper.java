@@ -14,37 +14,30 @@
  * limitations under the License.
  */
 
+/*
+* JcloudsNodeVisiter.java
+* 
+* User: Greg Schueler <a href="mailto:greg@dtosolutions.com">greg@dtosolutions.com</a>
+* Created: Feb 22, 2011 9:25:19 AM
+* 
+*/
 package org.dtolabs.rundeck.jclouds;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import org.jclouds.compute.domain.ComputeMetadata;
+import org.dtolabs.rundeck.resources.RundeckNodesRepBuilder;
 
 /**
- * Unit test for simple App.
+ * NodeMapper is used to map jclouds node metadata to Rundeck metadata
+ *
+ * @author Greg Schueler <a href="mailto:greg@dtosolutions.com">greg@dtosolutions.com</a>
  */
-public class AppTest
-    extends TestCase {
+public interface NodeMapper {
+
     /**
-     * Create the test case
+     * map node to a builder
      *
-     * @param testName name of the test case
+     * @param node
+     * @param builder
      */
-    public AppTest(String testName) {
-        super(testName);
-    }
-
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite() {
-        return new TestSuite(AppTest.class);
-    }
-
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp() {
-        assertTrue(true);
-    }
+    public void mapNode(ComputeMetadata node, final RundeckNodesRepBuilder builder);
 }
