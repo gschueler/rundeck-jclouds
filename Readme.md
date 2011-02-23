@@ -22,9 +22,8 @@ Create "provider.properties" file to specify Jclouds provider name and access cr
 
 (You can test with stub using file `rundeck-jclouds/src/test/resources/stubprovider.properties`)
 
-1. configure classpath to contain necessary jars. (jclouds, google guice, etc. see below)
-2. run java:
-        java -classpath "$CLASSPATH:target/rundeck-jclouds-1.0-SNAPSHOT.jar" org.dtolabs.rundeck.jclouds.RundeckJcloudsResourcesGenerator rundeck-jclouds/src/test/resources/stubprovider.properties rundeck-jclouds/src/test/resources/test-mapping.properties xml
+1. run:
+        java -jar rundeck-jclouds/target/rundeck-jclouds-1.0-SNAPSHOT-jar-with-dependencies.jar rundeck-jclouds/src/test/resources/stubprovider.properties rundeck-jclouds/src/test/resources/test-mapping.properties xml
 
 This will generate XML formatted RunDeck resources from 10 jclouds stub instances:
 
@@ -36,21 +35,5 @@ This will generate XML formatted RunDeck resources from 10 jclouds stub instance
       ...
     </project>
 
-RundeckJcloudsResourcesGenerator usage: `<provider.properties> <mapping.properties> <format(xml/yaml)> [output file]`
+usage: `<provider.properties> <mapping.properties> <format(xml/yaml)> [output file]`
 
-classpath jars
-----
-
-include jclouds compute jars
-
-Other dependencies:
-
-    gson-1.6.jar
-    guava-r08.jar
-    guice-assistedinject-3.0-rc2.jar
-    guice-3.0-rc2.jar
-    javax.inject-1.jar
-    aopalliance-1.0.jar
-    jersey-core-1.4.jar
-    snakeyaml-1.7.jar
-    dom4j-1.6.1.jar
