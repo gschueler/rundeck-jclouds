@@ -26,8 +26,6 @@ package org.dtolabs.rundeck.resources;
 import org.dtolabs.rundeck.resources.format.XmlGenerator;
 import org.dtolabs.rundeck.resources.format.YamlGenerator;
 
-import java.util.*;
-
 /**
  * ResourcesGeneratorFactory creates generators for a format
  *

@@ -23,7 +23,7 @@
 */
 package org.dtolabs.rundeck.jclouds;
 
-import org.jclouds.compute.domain.ComputeMetadata;
+import org.jclouds.compute.domain.NodeMetadata;
 import org.dtolabs.rundeck.resources.RundeckNodesRepBuilder;
 
 /**
@@ -39,5 +39,5 @@ public interface NodeMapper {
      * @param node
      * @param builder
      */
-    public void mapNode(ComputeMetadata node, final RundeckNodesRepBuilder builder);
+    public void mapNode(NodeMetadata node, final RundeckNodesRepBuilder builder);
 }

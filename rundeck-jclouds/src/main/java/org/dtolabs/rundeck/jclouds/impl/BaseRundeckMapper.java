@@ -23,7 +23,6 @@
 */
 package org.dtolabs.rundeck.jclouds.impl;
 
-import org.jclouds.compute.domain.ComputeMetadata;
 import org.jclouds.compute.domain.NodeMetadata;
 import org.jclouds.compute.domain.NodeState;
 import org.jclouds.compute.domain.OperatingSystem;
@@ -59,54 +58,53 @@ public class BaseRundeckMapper implements NodeMapper {
      * @param node
      * @param builder
      */
-    public void mapNode(final ComputeMetadata node, final RundeckNodesRepBuilder builder) {
-        final NodeMetadata metadata = context.getComputeService().getNodeMetadata(node.getId());
+    public void mapNode(final NodeMetadata metadata, final RundeckNodesRepBuilder builder) {
         if (metadata.getState() != NodeState.RUNNING) {
             return;
         }
         builder.node()
-            .name(mapName(node, metadata))
-            .description(mapDescription(node, metadata))
-            .hostname(mapHostname(node, metadata))
-            .tags(mapTags(node, metadata))
-            .username(mapUsername(node, metadata))
-            .osFamily(mapOsFamily(node, metadata))
-            .osName(mapOsName(node, metadata))
-            .osVersion(mapOSVersion(node, metadata))
-            .osArch(mapOsArch(node, metadata))
-            .editUrl(mapEditUrl(node, metadata))
-            .remoteUrl(mapRemoteUrl(node, metadata))
+            .name(mapName(metadata))
+            .description(mapDescription(metadata))
+            .hostname(mapHostname(metadata))
+            .tags(mapTags(metadata))
+            .username(mapUsername(metadata))
+            .osFamily(mapOsFamily(metadata))
+            .osName(mapOsName(metadata))
+            .osVersion(mapOSVersion(metadata))
+            .osArch(mapOsArch(metadata))
+            .editUrl(mapEditUrl(metadata))
+            .remoteUrl(mapRemoteUrl(metadata))
             .build();
     }
 
-    String mapOSVersion(final ComputeMetadata node, final NodeMetadata metadata) {
+    String mapOSVersion(final NodeMetadata metadata) {
         final OperatingSystem operatingSystem = metadata.getOperatingSystem();
         return operatingSystem.getVersion();
     }
 
-    String mapOsName(final ComputeMetadata node, final NodeMetadata metadata) {
+    String mapOsName(final NodeMetadata metadata) {
         final OperatingSystem operatingSystem = metadata.getOperatingSystem();
         return operatingSystem.getName();
     }
 
-    String mapOsFamily(final ComputeMetadata node, final NodeMetadata metadata) {
+    String mapOsFamily(final NodeMetadata metadata) {
         final OperatingSystem operatingSystem = metadata.getOperatingSystem();
         return operatingSystem.getFamily().toString();
     }
 
-    String mapOsArch(final ComputeMetadata node, final NodeMetadata metadata) {
+    String mapOsArch(final NodeMetadata metadata) {
         final OperatingSystem operatingSystem = metadata.getOperatingSystem();
         return operatingSystem.getArch();
     }
 
-    String mapUsername(final ComputeMetadata node, final NodeMetadata metadata) {
+    String mapUsername(final NodeMetadata metadata) {
         if (null != metadata.getCredentials() && null != metadata.getCredentials().identity) {
             return metadata.getCredentials().identity;
         }
         return null;
     }
 
-    String mapTags(final ComputeMetadata node, final NodeMetadata metadata) {
+    String mapTags(final NodeMetadata metadata) {
         String tags = "";
         if (null != metadata.getGroup()) {
             tags += metadata.getGroup() ;
@@ -114,7 +112,7 @@ public class BaseRundeckMapper implements NodeMapper {
         return tags;
     }
 
-    String mapHostname(final ComputeMetadata node, final NodeMetadata metadata) {
+    String mapHostname(final NodeMetadata metadata) {
         if (null != metadata.getPublicAddresses() && metadata.getPublicAddresses().size() > 0) {
             return Iterables.get(metadata.getPublicAddresses(), 0);
         } else if (null != metadata.getPrivateAddresses() && metadata.getPrivateAddresses().size() > 0) {
@@ -123,28 +121,28 @@ public class BaseRundeckMapper implements NodeMapper {
         return null;
     }
 
-    String mapName(final ComputeMetadata node, final NodeMetadata metadata) {
-        return null != node.getName() ? node.getName() : node.getId();
+    String mapName(final NodeMetadata metadata) {
+        return null != metadata.getName() ? metadata.getName() : metadata.getId();
     }
 
-    String mapDescription(final ComputeMetadata node, final NodeMetadata metadata) {
+    String mapDescription(final NodeMetadata metadata) {
         final StringBuffer desc = new StringBuffer();
-        desc.append("Node ").append(node.getProviderId());
-        if(null!=node.getName()) {
-            desc.append(" (").append(node.getName()).append(")");
+        desc.append("Node ").append(metadata.getProviderId());
+        if(null!=metadata.getName()) {
+            desc.append(" (").append(metadata.getName()).append(")");
         }
-        desc.append(" : ").append(node.getLocation().getIso3166Codes().toString());
+        desc.append(" : ").append(metadata.getLocation().getIso3166Codes().toString());
         desc.append(" imageid: ").append(metadata.getImageId());
 
         return desc.toString();
     }
 
-    String mapEditUrl(final ComputeMetadata node, final NodeMetadata metadata) {
+    String mapEditUrl(final NodeMetadata metadata) {
         //TODO:
         return null;
     }
 
-    String mapRemoteUrl(final ComputeMetadata node, final NodeMetadata metadata) {
+    String mapRemoteUrl(final NodeMetadata metadata) {
         //TODO:
         return null;
     }
