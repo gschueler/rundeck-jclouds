@@ -23,23 +23,28 @@
 */
 package org.dtolabs.rundeck.jclouds;
 
-import org.jclouds.compute.RunNodesException;
-import org.jclouds.compute.ComputeServiceContext;
-import org.jclouds.compute.ComputeServiceContextFactory;
-import org.jclouds.compute.ComputeService;
-import org.jclouds.compute.domain.Template;
-import org.jclouds.compute.domain.OsFamily;
-import org.jclouds.compute.domain.NodeMetadata;
-import org.jclouds.compute.domain.ComputeMetadata;
-import org.jclouds.logging.jdk.config.JDKLoggingModule;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStream;
+import java.util.Properties;
+import java.util.Set;
+
 import org.dtolabs.rundeck.jclouds.impl.BaseRundeckMapper;
 import org.dtolabs.rundeck.resources.ResourcesGenerator;
+import org.dtolabs.rundeck.resources.ResourcesGeneratorFactory;
 import org.dtolabs.rundeck.resources.RundeckNodesRep;
 import org.dtolabs.rundeck.resources.RundeckNodesRepBuilder;
-import org.dtolabs.rundeck.resources.ResourcesGeneratorFactory;
-
-import java.util.*;
-import java.io.*;
+import org.jclouds.compute.ComputeService;
+import org.jclouds.compute.ComputeServiceContext;
+import org.jclouds.compute.ComputeServiceContextFactory;
+import org.jclouds.compute.RunNodesException;
+import org.jclouds.compute.domain.NodeMetadata;
+import org.jclouds.compute.domain.OsFamily;
+import org.jclouds.compute.domain.Template;
+import org.jclouds.compute.predicates.NodePredicates;
+import org.jclouds.logging.jdk.config.JDKLoggingModule;
 
 import com.google.common.collect.ImmutableSet;
 import com.google.inject.Module;
@@ -129,7 +134,7 @@ public class RundeckJcloudsResourcesGenerator {
 
         final RundeckNodesRepBuilder builder = RundeckNodesRepBuilder.create();
         BaseRundeckMapper visitor = new BaseRundeckMapper(context, mapping);
-        for (ComputeMetadata node : client.listNodes()) {
+        for (NodeMetadata node : client.listNodesDetailsMatching(NodePredicates.all())) {
             visitor.mapNode(node, builder);
         }
         final RundeckNodesRep nodesRep = builder.build();
